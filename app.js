@@ -32,8 +32,6 @@ async function fetchData(movie_name) {
 
 
 
-
-
 }
 
 const movie_name = "12th fail";
@@ -46,4 +44,5 @@ search_button.addEventListener('click', () => {
     
 
 })
+
 
