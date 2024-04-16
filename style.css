@@ -222,6 +222,7 @@ a img{
 }
 
 footer{
+    margin-top: 5px;
     text-align: center;
     color: red;
     background-color: white;

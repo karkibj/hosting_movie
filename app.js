@@ -33,16 +33,35 @@ async function fetchData(movie_name) {
 
 
 }
-
+var result
 const movie_name = "12th fail";
 fetchData(movie_name); //for deafult dashboard
-
+var get_name
 const search_button = document.getElementById("button");
 search_button.addEventListener('click', () => {
-    const get_name = document.getElementById("get_movie").value;
+    get_name = document.getElementById("get_movie").value;
     fetchData(get_name); 
+    result = get_name.replace(/ /g,"-"); 
+    console.log(result)
+
     
 
 })
 
 
+
+console.log("Adding more featurs")
+
+
+links=document.getElementsByTagName('a')
+console.log(links)
+for(link of links){
+   
+    link.addEventListener('click',()=>{
+    alert(`Are you sure to search movie ${result}`)
+    link.href=`https://dopebox.to/search/${result}`;
+    // link.href=`https://www.youtube.com/results?search_query=The+social+network`
+})
+}
+
+//same thing using for each
