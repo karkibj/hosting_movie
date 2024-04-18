@@ -42,15 +42,9 @@ search_button.addEventListener('click', () => {
     get_name = document.getElementById("get_movie").value;
     fetchData(get_name); 
     result = get_name.replace(/ /g,"-"); 
-    console.log(result)
-
-    
+    console.log(result);
 
 })
-
-
-
-console.log("Adding more featurs")
 
 
 links=document.getElementsByTagName('a')
@@ -63,5 +57,6 @@ for(link of links){
     // link.href=`https://www.youtube.com/results?search_query=The+social+network`
 })
 }
-
+ v
 //same thing using for each
+
